@@ -12,6 +12,13 @@ State is two maps: userId → tweet log (with a global logical clock stamping or
 
 **Complexity:** Post/Follow/Unfollow O(1); GetNewsFeed O(F log F) where F = 10·(followees+1).
 
+## Visual walkthrough
+
+Read the picture top to bottom — each numbered frame is one moment of the algorithm
+running on this repo's test example.
+
+![Step-by-step visual walkthrough](viz.svg)
+
 ## Run
 
     go test ./...   # verify
